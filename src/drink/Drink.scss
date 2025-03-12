@@ -1,0 +1,50 @@
+.drink {
+  display: flex;
+  justify-content: center;
+  .cup {
+    border-top: 8px solid rgba(0, 0, 0, 0);
+    border-left: 8px solid #adc2eb;
+    border-right: 8px solid #adc2eb;
+    border-bottom: 8px solid #adc2eb;
+    border-radius: 0 0 20% 20%;
+    overflow: hidden;
+    .tea {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      .addon {
+        position: relative;
+      }
+      .foam {
+        .top {
+          height: 30px;
+          background-color: rgba(255, 249, 204);
+        }
+        .bottom {
+          height: 20px;
+          background: linear-gradient(
+            rgba(255, 249, 204),
+            rgba(255, 249, 204, 0)
+          );
+        }
+      }
+      .ice-layer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 10px;
+      }
+      .topping-layer {
+        display: flex;
+        flex-grow: 1;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-content: flex-start;
+      }
+    }
+  }
+}
